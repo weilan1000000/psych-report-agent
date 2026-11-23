@@ -1,0 +1,25 @@
+{
+  "description": "TextAgent 第一批批量验证样本。所有样本均为脱敏综合画像，用于覆盖不同分数结构，不对应单一真实儿童。",
+  "samples": [
+    {
+      "file": "sample_001_broad_strength.json",
+      "profile": "广泛优势型：创新兴趣、学习意义感和表达参与度整体较高"
+    },
+    {
+      "file": "sample_002_builder_flex_gap.json",
+      "profile": "动手建构强但思维发散和公开表达待支持"
+    },
+    {
+      "file": "sample_003_expressive_execution_gap.json",
+      "profile": "表达社交兴趣强但执行功能和规则抽象待支持"
+    },
+    {
+      "file": "sample_004_cognitive_expression_gap.json",
+      "profile": "认知效率较强但表达和兴趣启动偏谨慎"
+    },
+    {
+      "file": "sample_005_balanced_middle.json",
+      "profile": "整体均衡型：各维度大多处在常态区，重点是找到可持续培养入口"
+    }
+  ]
+}

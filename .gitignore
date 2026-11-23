@@ -1,0 +1,58 @@
+# Environment and secrets
+.env
+.env.*
+*.env
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Generated outputs and scratch work
+output/
+tmp/
+.scratch/
+pdf_inspection/
+
+# Local caches and logs
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Raw source documents should be reviewed before committing.
+# Keep derived JSON/JSONL knowledge in data/ and rag_examples/, but avoid
+# accidentally uploading raw expert files or local review artifacts.
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.pdf
+!/docs/showcase/junior-high-demo.pdf
+!/docs/showcase/scoring-appendix-demo.pdf
+/samples/sample_junior_high_liu_x_tong.json
+/docs/reference_notes/
+
+# Playwright local artifacts
+playwright-report/
+test-results/
+dist/
+
+# Editor / OS
+.idea/
+.vscode/

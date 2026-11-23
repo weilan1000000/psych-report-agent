@@ -1,0 +1,73 @@
+{
+  "document_title": "儿童青少年高阶思维测评报告",
+  "report_type": "youth_innovation",
+  "page": {
+    "page_type": "dimension_detail",
+    "title": "维度详解",
+    "subtitle": "DETAILED EXPLANATION OF LATITUDE",
+    "section_badge": "创新行为：这个板块主要评估孩子在日常生活中更愿意在哪些具体活动里发挥自己的创造力。"
+  },
+  "chart": {
+    "type": "horizontal_bar",
+    "title": "创新行为领域表现",
+    "x_max": 18,
+    "series": [
+      {
+        "label": "社会",
+        "score": 4,
+        "reference": 10.1
+      },
+      {
+        "label": "科学",
+        "score": 10,
+        "reference": 16.42
+      },
+      {
+        "label": "设计",
+        "score": 11,
+        "reference": 11.42,
+        "highlight": true
+      },
+      {
+        "label": "文学",
+        "score": 4,
+        "reference": 9.75
+      },
+      {
+        "label": "表演",
+        "score": 4,
+        "reference": 9.98
+      }
+    ],
+    "legend": [
+      {
+        "label": "班级均值",
+        "color": "green"
+      },
+      {
+        "label": "得分",
+        "color": "green_dark"
+      }
+    ]
+  },
+  "text_blocks": [
+    {
+      "type": "highlight_bullet",
+      "title": "设计与科学 —— 优势项",
+      "body": "指在“建构性”与“探索性”领域的创造倾向，既依赖个体的空间智力与逻辑能力，也需要动手实践。当前结果提示，孩子在这些领域更容易表现出自信和投入。"
+    },
+    {
+      "type": "highlight_bullet",
+      "title": "表演与文学 —— 待激发",
+      "body": "这类表现更多关联语言表达、身体动觉和公开表达意愿。孩子在这些需要外显表达的环节里可能更谨慎，可以通过低压力的展示任务逐步激发。"
+    },
+    {
+      "type": "highlight_bullet",
+      "title": "社会 —— 待激发",
+      "body": "社会创新能力强调在人际互动中提出想法、协调任务和解决问题。当前结果提示，可以从小组协作中的角色分工和表达机会开始培养。"
+    }
+  ],
+  "footer": {
+    "band": true
+  }
+}

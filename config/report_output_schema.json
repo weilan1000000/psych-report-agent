@@ -1,0 +1,23 @@
+{
+  "schema_version": "parent_report_output_v1",
+  "required_top_level_keys": ["audience", "report_type", "data_sketch", "sections", "parent_suggestions", "self_check"],
+  "required_section_ids": ["preface", "core_growth_portrait", "detailed_indicator_analysis", "growth_support_suggestions", "boundary_note"],
+  "parent_suggestion": {
+    "required_fields": ["category", "scene", "data_basis", "action", "parent_wording", "first_step"],
+    "allowed_categories": [
+      "学习与日常",
+      "课外与探索",
+      "亲子互动与沟通",
+      "自我成长与学习规划",
+      "兴趣探索与项目实践",
+      "生涯启发与发展规划"
+    ],
+    "allowed_categories_by_stage": {
+      "elementary": ["学习与日常", "课外与探索", "亲子互动与沟通"],
+      "secondary": ["自我成长与学习规划", "兴趣探索与项目实践", "生涯启发与发展规划"],
+      "junior_high": ["自我成长与学习规划", "兴趣探索与项目实践", "生涯启发与发展规划"],
+      "senior_high": ["自我成长与学习规划", "兴趣探索与项目实践", "生涯启发与发展规划"]
+    },
+    "legacy_aliases": {"small_first_step": "first_step"}
+  }
+}

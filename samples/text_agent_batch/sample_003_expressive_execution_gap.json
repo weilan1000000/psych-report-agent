@@ -1,0 +1,101 @@
+{
+  "scale_name": "创新潜能与综合素质评估",
+  "report_type": "innovation_potential",
+  "audience": "parents",
+  "profile_label": "表达社交兴趣强但执行功能和规则抽象待支持",
+  "respondent_profile": {
+    "child_id": "batch_child_003",
+    "age_group": "小学高年级",
+    "grade": "五年级",
+    "scenario": "家长希望了解孩子表达参与度高但任务规划和持续专注较不稳定的特点",
+    "data_source_note": "基于现有真人测评分布构造的脱敏综合画像，不对应单一真实儿童。"
+  },
+  "scores": {
+    "performance": {
+      "dimension_name": "表演",
+      "domain": "创新行为倾向",
+      "score": 92,
+      "level": "高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子愿意通过讲述、表演或展示参与活动，较容易在互动中表达自己。",
+      "writing_hint": "可写成表达参与资源，不要写成一定外向或社交能力固定强。"
+    },
+    "literature": {
+      "dimension_name": "文学",
+      "domain": "创新行为倾向",
+      "score": 85,
+      "level": "高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子对故事、文字和语言组织较感兴趣，愿意用叙述表达想法。",
+      "writing_hint": "可与表演一起构成语言表达优势。"
+    },
+    "social": {
+      "dimension_name": "社会",
+      "domain": "创新行为倾向",
+      "score": 95,
+      "level": "高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子对人与人之间的互动、合作和社会情境有较高兴趣。",
+      "writing_hint": "写成关注互动和愿意参与，不推断同伴关系事实。"
+    },
+    "school_belonging": {
+      "dimension_name": "学校归属感",
+      "domain": "情绪与学业幸福感",
+      "score": 90,
+      "level": "高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子较能感受到自己与学校环境之间的连接，对集体活动有一定认同感。",
+      "writing_hint": "可作为表达和参与的情绪支持资源。"
+    },
+    "overall_executive": {
+      "dimension_name": "整体执行功能",
+      "domain": "高阶认知维度",
+      "score": 42,
+      "level": "发展中",
+      "percentile_band": "bottom_30",
+      "interpretation": "孩子在任务规划、步骤保持和持续执行方面需要更多外部结构支持。",
+      "writing_hint": "不要写成自控差，写成需要清晰步骤和可视化计划。"
+    },
+    "attention_stability": {
+      "dimension_name": "注意稳定性",
+      "domain": "高阶认知维度",
+      "score": 38,
+      "level": "发展中",
+      "percentile_band": "bottom_30",
+      "interpretation": "孩子在任务较长或要求单一时较容易分心，短任务和互动任务中更容易投入。",
+      "writing_hint": "建议分段任务、即时反馈，不做注意力问题诊断。"
+    },
+    "rule_abstraction": {
+      "dimension_name": "规则抽象能力",
+      "domain": "高阶认知维度",
+      "score": 43,
+      "level": "发展中",
+      "percentile_band": "bottom_30",
+      "interpretation": "孩子在从复杂任务中提炼规则或迁移规律时还需要更多示范。",
+      "writing_hint": "写成需要示范和复盘，不写成理解能力差。"
+    },
+    "design": {
+      "dimension_name": "设计",
+      "domain": "创新行为倾向",
+      "score": 65,
+      "level": "中等",
+      "percentile_band": "middle",
+      "interpretation": "孩子对动手和作品改造有一定兴趣，但不是最突出的优势来源。",
+      "writing_hint": "作为中等资源，可辅助执行计划，不要写成核心优势。"
+    }
+  },
+  "constraints": {
+    "not_diagnosis": true,
+    "parent_facing": true,
+    "avoid_claims": [
+      "不要做医学诊断或临床判断",
+      "不要推断真实同伴关系或学校经历",
+      "不要使用吓人、绝对化、标签化表达"
+    ],
+    "preferred_style": [
+      "写给家长看",
+      "低分项使用发展性表达",
+      "建议必须包含场景、动作和家长可以说的话"
+    ]
+  }
+}

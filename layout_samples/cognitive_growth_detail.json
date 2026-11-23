@@ -1,0 +1,74 @@
+{
+  "document_title": "认知成长能力测评报告",
+  "report_type": "cognitive_growth",
+  "page": {
+    "page_type": "dimension_detail",
+    "title": "认知成长画像",
+    "subtitle": "COGNITIVE GROWTH PROFILE",
+    "section_badge": "成长观察：本页呈现注意、工作记忆和问题解决相关能力的相对表现。"
+  },
+  "chart": {
+    "type": "horizontal_bar",
+    "title": "认知能力维度表现",
+    "x_max": 100,
+    "series": [
+      {
+        "label": "注意保持",
+        "score": 74,
+        "reference": 65
+      },
+      {
+        "label": "工作记忆",
+        "score": 82,
+        "reference": 68,
+        "highlight": true
+      },
+      {
+        "label": "规则转换",
+        "score": 61,
+        "reference": 64
+      },
+      {
+        "label": "问题解决",
+        "score": 79,
+        "reference": 66,
+        "highlight": true
+      },
+      {
+        "label": "反应控制",
+        "score": 58,
+        "reference": 63
+      }
+    ],
+    "legend": [
+      {
+        "label": "同龄参考",
+        "color": "green"
+      },
+      {
+        "label": "当前表现",
+        "color": "green_dark"
+      }
+    ]
+  },
+  "text_blocks": [
+    {
+      "type": "highlight_bullet",
+      "title": "工作记忆 —— 优势项",
+      "body": "结果提示，用户在短时间保持和操作信息方面有较好表现，适合通过分步骤任务继续巩固。"
+    },
+    {
+      "type": "highlight_bullet",
+      "title": "反应控制 —— 可训练",
+      "body": "反应控制相对低一些时，可以通过规则游戏、延迟反应练习和复盘提示逐步提升。"
+    },
+    {
+      "type": "highlight_bullet",
+      "title": "成长建议 —— 任务拆解",
+      "body": "建议把复杂任务拆成短步骤，并在每一步结束后给出即时反馈，让用户更容易形成稳定的策略。"
+    }
+  ],
+  "footer": {
+    "band": true
+  }
+}

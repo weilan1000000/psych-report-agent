@@ -1,0 +1,34 @@
+{
+  "name": "cognitive_coral_sage",
+  "label": "认知成长活力",
+  "best_for": ["cognitive_growth", "attention_memory", "thinking_skill", "student_development"],
+  "page": {
+    "size": "A4",
+    "width_mm": 210,
+    "height_mm": 297,
+    "margin_top_mm": 24,
+    "margin_right_mm": 20,
+    "margin_bottom_mm": 20,
+    "margin_left_mm": 20
+  },
+  "colors": {
+    "primary": "#ef6f5e",
+    "primary_dark": "#c84d3f",
+    "green": "#9bc68d",
+    "green_dark": "#3f8d69",
+    "ink": "#3b302d",
+    "body": "#2f3330",
+    "muted": "#7a817b",
+    "line": "#e8ece6",
+    "soft_yellow": "#fff0ed",
+    "paper": "#ffffff"
+  },
+  "typography": {
+    "font_family": "\"Microsoft YaHei\", \"PingFang SC\", \"Noto Sans SC\", Arial, sans-serif",
+    "title_px": 34,
+    "subtitle_px": 20,
+    "body_px": 16,
+    "small_px": 13,
+    "line_height": 1.62
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "document_title": "情绪与压力状态测评报告",
+  "report_type": "emotion_stress",
+  "page": {
+    "page_type": "dimension_detail",
+    "title": "压力与恢复",
+    "subtitle": "STRESS AND RECOVERY PROFILE",
+    "section_badge": "状态概览：本页聚焦压力、焦虑和睡眠恢复之间的相互影响。"
+  },
+  "chart": {
+    "type": "horizontal_bar",
+    "title": "情绪压力维度表现",
+    "x_max": 100,
+    "series": [
+      {
+        "label": "压力感",
+        "score": 78,
+        "reference": 50,
+        "highlight": true
+      },
+      {
+        "label": "焦虑感",
+        "score": 62,
+        "reference": 50
+      },
+      {
+        "label": "睡眠恢复",
+        "score": 55,
+        "reference": 60
+      },
+      {
+        "label": "情绪稳定",
+        "score": 48,
+        "reference": 60
+      },
+      {
+        "label": "放松能力",
+        "score": 42,
+        "reference": 60
+      }
+    ],
+    "legend": [
+      {
+        "label": "参考水平",
+        "color": "green"
+      },
+      {
+        "label": "当前得分",
+        "color": "green_dark"
+      }
+    ]
+  },
+  "text_blocks": [
+    {
+      "type": "highlight_bullet",
+      "title": "压力感 —— 当前最突出",
+      "body": "测评结果提示，近期主观负荷感较明显，可能更容易感到紧绷、疲惫或难以真正放松。报告解释应保持温和，不把测评结果写成诊断。"
+    },
+    {
+      "type": "highlight_bullet",
+      "title": "睡眠恢复 —— 需要关注",
+      "body": "睡眠恢复感一般时，白天的情绪调节和压力耐受可能受到影响。排版上应减少强刺激色彩，给页面更多呼吸感。"
+    },
+    {
+      "type": "highlight_bullet",
+      "title": "调整方向 —— 小步恢复",
+      "body": "建议从固定的睡前过渡、短时放松和记录担忧开始，帮助用户建立可执行的恢复节奏。"
+    }
+  ],
+  "footer": {
+    "band": true
+  }
+}

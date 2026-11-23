@@ -1,0 +1,101 @@
+{
+  "scale_name": "创新潜能与综合素质评估",
+  "report_type": "innovation_potential",
+  "audience": "parents",
+  "profile_label": "动手建构强但思维发散和公开表达待支持",
+  "respondent_profile": {
+    "child_id": "batch_child_002",
+    "age_group": "小学高年级",
+    "grade": "五年级",
+    "scenario": "家长希望理解孩子动手能力强但遇到开放题和表达任务时较谨慎的原因",
+    "data_source_note": "基于现有真人测评分布构造的脱敏综合画像，不对应单一真实儿童。"
+  },
+  "scores": {
+    "design": {
+      "dimension_name": "设计",
+      "domain": "创新行为倾向",
+      "score": 100,
+      "level": "高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子对拼搭、拆解和结构改造非常感兴趣，愿意通过作品把想法落地。",
+      "writing_hint": "可作为核心优势，但要避免一流、天才、工程师等标签化表达。"
+    },
+    "science": {
+      "dimension_name": "科学",
+      "domain": "创新行为倾向",
+      "score": 82,
+      "level": "高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子对实验、机械、自然现象背后的原理有较明显兴趣。",
+      "writing_hint": "可与设计优势共同构成动手探索画像。"
+    },
+    "learning_confidence": {
+      "dimension_name": "学习自信感",
+      "domain": "情绪与学业幸福感",
+      "score": 85,
+      "level": "高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子在熟悉或感兴趣的任务中较相信自己能完成。",
+      "writing_hint": "写成特定任务中的信心，不要泛化为所有学习都自信。"
+    },
+    "question_curiosity": {
+      "dimension_name": "问题好奇心",
+      "domain": "好奇维度",
+      "score": 42,
+      "level": "发展中",
+      "percentile_band": "bottom_30",
+      "interpretation": "孩子会对感兴趣的内容发问，但持续追问原因和主动查证的习惯还需要培养。",
+      "writing_hint": "写成可培养的追问习惯，不要写成缺乏好奇心。"
+    },
+    "thinking_fluency": {
+      "dimension_name": "思维流畅性",
+      "domain": "思维维度",
+      "score": 25,
+      "level": "发展中",
+      "percentile_band": "bottom_30",
+      "interpretation": "面对开放任务时，孩子一次性产生多个想法的速度较慢，需要更多示范和时间。",
+      "writing_hint": "用发展性表达，建议给低压头脑风暴和数量练习。"
+    },
+    "thinking_flexibility": {
+      "dimension_name": "思维灵活性",
+      "domain": "思维维度",
+      "score": 20,
+      "level": "发展中",
+      "percentile_band": "bottom_30",
+      "interpretation": "孩子在熟悉步骤中较稳，但在需要快速换角度或改变方法时较依赖提示。",
+      "writing_hint": "说明这和设计优势可以共存，用动手改造作为脚手架。"
+    },
+    "public_expression": {
+      "dimension_name": "公开表达",
+      "domain": "创新行为倾向",
+      "score": 40,
+      "level": "发展中",
+      "percentile_band": "bottom_30",
+      "interpretation": "孩子在公开展示或即兴表达时较谨慎，更愿意先观察和准备。",
+      "writing_hint": "写成需要低压表达练习，不要写内向、抗拒或放不开。"
+    },
+    "attention_stability": {
+      "dimension_name": "注意稳定性",
+      "domain": "高阶认知维度",
+      "score": 64,
+      "level": "中等",
+      "percentile_band": "middle",
+      "interpretation": "孩子在具体、有材料的任务中较能投入，但长时间抽象任务可能波动。",
+      "writing_hint": "建议短时任务、材料化提示和可视化步骤。"
+    }
+  },
+  "constraints": {
+    "not_diagnosis": true,
+    "parent_facing": true,
+    "avoid_claims": [
+      "不要做医学诊断或临床判断",
+      "不要编造孩子没有提供的家庭、学校或创伤经历",
+      "不要使用吓人、绝对化、标签化表达"
+    ],
+    "preferred_style": [
+      "写给家长看",
+      "低分项使用发展性表达",
+      "建议必须包含场景、动作和家长可以说的话"
+    ]
+  }
+}

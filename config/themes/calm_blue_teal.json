@@ -1,0 +1,34 @@
+{
+  "name": "calm_blue_teal",
+  "label": "情绪压力舒缓",
+  "best_for": ["mental_health", "emotion_stress", "wellbeing", "sleep_stress"],
+  "page": {
+    "size": "A4",
+    "width_mm": 210,
+    "height_mm": 297,
+    "margin_top_mm": 24,
+    "margin_right_mm": 20,
+    "margin_bottom_mm": 20,
+    "margin_left_mm": 20
+  },
+  "colors": {
+    "primary": "#2db7b5",
+    "primary_dark": "#127f86",
+    "green": "#8bcfbd",
+    "green_dark": "#227c70",
+    "ink": "#173c43",
+    "body": "#233235",
+    "muted": "#718287",
+    "line": "#e2eeee",
+    "soft_yellow": "#e8f7f5",
+    "paper": "#ffffff"
+  },
+  "typography": {
+    "font_family": "\"Microsoft YaHei\", \"PingFang SC\", \"Noto Sans SC\", Arial, sans-serif",
+    "title_px": 34,
+    "subtitle_px": 21,
+    "body_px": 16,
+    "small_px": 13,
+    "line_height": 1.64
+  }
+}

@@ -1,0 +1,1 @@
+"""Local report operations console."""

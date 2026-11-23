@@ -1,0 +1,32 @@
+{
+  "scale_name": "情绪与压力状态测评",
+  "respondent_profile": {
+    "age_group": "大学生",
+    "scenario": "实习前自我状态了解"
+  },
+  "scores": {
+    "stress": {
+      "score": 78,
+      "level": "偏高",
+      "interpretation": "近期主观压力感较明显，可能更容易感到紧绷、疲惫或难以放松。"
+    },
+    "anxiety": {
+      "score": 62,
+      "level": "中等",
+      "interpretation": "存在一定担忧和紧张倾向，但需要结合具体生活情境理解。"
+    },
+    "sleep": {
+      "score": 55,
+      "level": "中等",
+      "interpretation": "睡眠恢复感一般，可能和压力、作息或睡前状态有关。"
+    }
+  },
+  "constraints": {
+    "not_diagnosis": true,
+    "avoid_claims": [
+      "不要诊断用户患有某种心理疾病",
+      "不要编造用户没有提供的生活经历",
+      "不要使用吓人、绝对化或标签化表达"
+    ]
+  }
+}

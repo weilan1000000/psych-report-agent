@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>心理报告生成台</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">PSYCH REPORT OPERATIONS</p>
+        <h1>心理报告生成台</h1>
+      </div>
+      <div class="service-state" id="service-state" aria-live="polite">
+        <span class="state-dot"></span>
+        本地服务连接中
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="setup-panel" aria-labelledby="setup-title">
+        <div class="section-heading">
+          <div>
+            <p class="step-label">01 / 任务配置</p>
+            <h2 id="setup-title">创建一批报告</h2>
+          </div>
+          <span class="privacy-note">Key 仅用于本次本地任务</span>
+        </div>
+
+        <form id="job-form">
+          <fieldset class="field-group">
+            <legend>报告版本</legend>
+            <div class="segmented" role="radiogroup" aria-label="报告版本">
+              <label>
+                <input type="radio" name="stage" value="elementary" checked />
+                <span>小学版</span>
+              </label>
+              <label>
+                <input type="radio" name="stage" value="junior_high" />
+                <span>初中版</span>
+              </label>
+              <label>
+                <input type="radio" name="stage" value="senior_high" />
+                <span>高中版</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="field-group">
+            <label class="field-label" for="api-key">DeepSeek API Key</label>
+            <div class="key-row">
+              <input
+                id="api-key"
+                name="api-key"
+                type="password"
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="sk-..."
+                required
+              />
+              <label class="show-key">
+                <input id="show-key" type="checkbox" />
+                <span>显示</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="field-group file-field">
+            <div class="field-title-row">
+              <label class="field-label" for="json-files">被试数据</label>
+              <span id="file-count">尚未选择</span>
+            </div>
+            <label class="file-drop" id="file-drop" for="json-files">
+              <input id="json-files" type="file" accept="application/json,.json" multiple required />
+              <span class="file-action">选择 JSON 文件</span>
+              <span>支持多选，系统将按队列逐份生成</span>
+            </label>
+            <ul class="file-list" id="file-list" aria-live="polite"></ul>
+          </div>
+
+          <details class="advanced-settings">
+            <summary>质量与输出设置</summary>
+            <div class="advanced-grid">
+              <label>
+                <span>最多改写轮次</span>
+                <input id="max-rounds" type="number" min="1" max="5" value="3" />
+              </label>
+              <label>
+                <span>目标质量分</span>
+                <input id="quality-score" type="number" min="60" max="100" value="90" />
+              </label>
+              <label class="toggle-row">
+                <input id="render-review" type="checkbox" checked />
+                <span>未通过时生成审核稿</span>
+              </label>
+            </div>
+          </details>
+
+          <div class="form-footer">
+            <p id="form-message" role="alert"></p>
+            <button class="primary-button" id="submit-button" type="submit">
+              开始批量生成
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="queue-panel" aria-labelledby="queue-title">
+        <div class="section-heading queue-heading">
+          <div>
+            <p class="step-label">02 / 运行队列</p>
+            <h2 id="queue-title">生成状态</h2>
+          </div>
+          <div class="queue-summary" id="queue-summary">等待任务</div>
+        </div>
+
+        <div class="empty-state" id="empty-state">
+          <div class="empty-mark">JSON → PDF</div>
+          <p>任务创建后，可在这里查看每份报告的生成状态、质量检查和 PDF。</p>
+        </div>
+
+        <div class="queue-table-wrap" id="queue-table-wrap" hidden>
+          <table class="queue-table">
+            <thead>
+              <tr>
+                <th>被试文件</th>
+                <th>状态</th>
+                <th>结果</th>
+              </tr>
+            </thead>
+            <tbody id="queue-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span>本地运行 · assessment JSON 是被试事实的唯一来源</span>
+      <span>输出目录：D:\Agent1\output\report_app</span>
+    </footer>
+
+    <dialog class="feedback-dialog" id="feedback-dialog">
+      <div class="feedback-shell">
+        <header class="feedback-header">
+          <div>
+            <p class="step-label">03 / 人工质量复核</p>
+            <h2 id="feedback-title">处理待复核问题</h2>
+            <p id="feedback-context"></p>
+          </div>
+          <button class="icon-button" id="feedback-close" type="button" title="关闭反馈窗口" aria-label="关闭反馈窗口">×</button>
+        </header>
+        <div class="feedback-toolbar">
+          <label>
+            <span>审核人（可选）</span>
+            <input id="feedback-reviewer" type="text" maxlength="80" placeholder="姓名或岗位" />
+          </label>
+          <p>反馈仅保存在当前任务目录，不会自动写入 Skills 或 RAG。</p>
+        </div>
+        <form id="feedback-form">
+          <div class="feedback-issues" id="feedback-issues"></div>
+          <div class="feedback-footer">
+            <p id="feedback-message" role="alert"></p>
+            <div>
+              <button class="secondary-button" id="feedback-cancel" type="button">取消</button>
+              <button class="primary-button" id="feedback-save" type="submit">保存复核意见</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>

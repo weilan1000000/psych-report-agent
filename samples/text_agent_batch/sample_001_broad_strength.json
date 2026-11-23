@@ -1,0 +1,111 @@
+{
+  "scale_name": "创新潜能与综合素质评估",
+  "report_type": "innovation_potential",
+  "audience": "parents",
+  "profile_label": "广泛优势型：创新兴趣、学习意义感和表达参与度整体较高",
+  "respondent_profile": {
+    "child_id": "batch_child_001",
+    "age_group": "小学高年级",
+    "grade": "五年级",
+    "scenario": "家长希望了解孩子整体创新潜能、优势资源和后续培养方向",
+    "data_source_note": "基于现有真人测评分布构造的脱敏综合画像，不对应单一真实儿童。"
+  },
+  "scores": {
+    "performance": {
+      "dimension_name": "表演",
+      "domain": "创新行为倾向",
+      "score": 91.7,
+      "level": "高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子愿意通过展示、讲述或角色表达来呈现想法，在熟悉环境中较容易被看见。",
+      "writing_hint": "可作为表达参与优势，但不要写成天生舞台型人格。"
+    },
+    "literature": {
+      "dimension_name": "文学",
+      "domain": "创新行为倾向",
+      "score": 88.3,
+      "level": "高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子对文字、故事和语言表达有较高兴趣，容易通过阅读或叙述组织想法。",
+      "writing_hint": "可写成语言和故事兴趣，不要夸大成写作天赋定论。"
+    },
+    "design": {
+      "dimension_name": "设计",
+      "domain": "创新行为倾向",
+      "score": 95,
+      "level": "高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子对动手拼搭、结构组合和作品改造有明显兴趣，遇到具体材料时更容易进入探索状态。",
+      "writing_hint": "作为核心优势，写具体的动手、组合、改造，不写成能力顶尖。"
+    },
+    "science": {
+      "dimension_name": "科学",
+      "domain": "创新行为倾向",
+      "score": 90,
+      "level": "高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子对自然现象、实验和因果解释较感兴趣，愿意了解事物背后的原理。",
+      "writing_hint": "可与问题好奇心结合写，不要写成未来一定适合科学方向。"
+    },
+    "question_curiosity": {
+      "dimension_name": "问题好奇心",
+      "domain": "好奇维度",
+      "score": 78,
+      "level": "较高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子愿意提出为什么，也愿意围绕感兴趣的问题继续听解释。",
+      "writing_hint": "写成愿意追问和查证，不夸大成总能提出深刻问题。"
+    },
+    "thinking_flexibility": {
+      "dimension_name": "思维灵活性",
+      "domain": "思维维度",
+      "score": 72,
+      "level": "较高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子在遇到不同要求时有一定换角度思考的能力，能尝试不止一种方法。",
+      "writing_hint": "写成有较好基础，仍可继续通过开放任务巩固。"
+    },
+    "rule_abstraction": {
+      "dimension_name": "规则抽象能力",
+      "domain": "高阶认知维度",
+      "score": 52,
+      "level": "中等",
+      "percentile_band": "middle",
+      "interpretation": "孩子能理解常见规则和规律，但在更抽象或变化较快的任务中仍需要提示。",
+      "writing_hint": "作为平衡项，不写成短板，也不写成突出优势。"
+    },
+    "learning_meaning": {
+      "dimension_name": "学习意义感",
+      "domain": "情绪与学业幸福感",
+      "score": 88,
+      "level": "高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子较能感受到学习与自我成长之间的联系，在感兴趣的任务中愿意投入。",
+      "writing_hint": "写成内在动力和投入感，不写成崇高感。"
+    },
+    "attention_stability": {
+      "dimension_name": "注意稳定性",
+      "domain": "高阶认知维度",
+      "score": 76,
+      "level": "较高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子在目标清楚、任务有一定挑战时较能维持投入。",
+      "writing_hint": "可作为学习执行资源，但仍要避免写成任何场景都专注。"
+    }
+  },
+  "constraints": {
+    "not_diagnosis": true,
+    "parent_facing": true,
+    "avoid_claims": [
+      "不要做医学诊断或临床判断",
+      "不要编造孩子没有提供的家庭、学校或创伤经历",
+      "不要使用吓人、绝对化、标签化表达",
+      "不要把测评结果写成固定人格结论"
+    ],
+    "preferred_style": [
+      "写给家长看",
+      "说实话、说人话、不吓人、给办法",
+      "建议必须包含场景、动作和家长可以说的话"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "report_type": "青少年创新潜能与综合素质评估报告",
+  "school_stage": "junior_high",
+  "audience": "student",
+  "scale_name": "青少年创新潜能与综合素质评估",
+  "respondent_profile": {
+    "report_subject_label": "示例同学",
+    "age_group": "初中阶段",
+    "grade": "初二"
+  },
+  "assessment_metadata": {
+    "source_student_id": "1",
+    "assessment_date": "2026-01-15",
+    "data_source": "合成演示数据",
+    "synthetic": true
+  },
+  "scale_config": {
+    "catalog_id": "students_scores_100_v1",
+    "classification_basis": "fixed_norm_20_80_raw_score"
+  },
+  "scores": {
+    "表演": { "raw_score": 6 },
+    "文学": { "raw_score": 8 },
+    "设计": { "raw_score": 12 },
+    "科学": { "raw_score": 11 },
+    "社会": { "raw_score": 11 },
+    "兴趣好奇心": { "raw_score": 25 },
+    "问题好奇心": { "raw_score": 12 },
+    "思维流畅性": { "raw_score": 2.5 },
+    "思维灵活性": { "raw_score": 4 },
+    "思维独创性": { "raw_score": 4.1 },
+    "思维聚合性": { "raw_score": 10 },
+    "认知灵活性": { "raw_score": 71 },
+    "规则抽象能力": { "raw_score": 68 },
+    "学习速度": { "raw_score": 94 },
+    "注意稳定性": { "raw_score": 95 },
+    "整体执行功能": { "raw_score": 84 },
+    "抑制控制(Nogo)": { "raw_score": 0.97 },
+    "抑制控制(go)": { "raw_score": 0.91 },
+    "逻辑推理": { "raw_score": 24 },
+    "学习乐趣": { "raw_score": 12 },
+    "学校归属感": { "raw_score": 11 },
+    "学习意义感": { "raw_score": 12 },
+    "学习自信感": { "raw_score": 12 },
+    "积极情绪": { "raw_score": 35 },
+    "负性情绪": { "raw_score": 24 },
+    "情感平衡": { "raw_score": 11 }
+  }
+}

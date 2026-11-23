@@ -1,0 +1,33 @@
+{
+  "name": "innovation_yellow_green",
+  "version": "0.1",
+  "page": {
+    "size": "A4",
+    "width_mm": 210,
+    "height_mm": 297,
+    "margin_top_mm": 24,
+    "margin_right_mm": 20,
+    "margin_bottom_mm": 20,
+    "margin_left_mm": 20
+  },
+  "colors": {
+    "primary": "#f5b900",
+    "primary_dark": "#d99d00",
+    "green": "#76bd43",
+    "green_dark": "#1b8f2f",
+    "ink": "#2e2a12",
+    "body": "#232323",
+    "muted": "#777777",
+    "line": "#e8e8e8",
+    "soft_yellow": "#fff4d6",
+    "paper": "#ffffff"
+  },
+  "typography": {
+    "font_family": "\"Microsoft YaHei\", \"PingFang SC\", \"Noto Sans SC\", Arial, sans-serif",
+    "title_px": 34,
+    "subtitle_px": 22,
+    "body_px": 16,
+    "small_px": 13,
+    "line_height": 1.62
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "document_title": "个性测验个人反馈报告",
+  "report_type": "personality",
+  "page": {
+    "page_type": "dimension_detail",
+    "title": "个性详解",
+    "subtitle": "PERSONALITY TRAIT DETAIL",
+    "section_badge": "人格侧写：本页展示某一能力群下的具体得分和行为倾向解释。"
+  },
+  "chart": {
+    "type": "horizontal_bar",
+    "title": "抱负能量维度表现",
+    "x_max": 10,
+    "series": [
+      {
+        "label": "成功愿望",
+        "score": 5.3,
+        "reference": 6.2
+      },
+      {
+        "label": "权力动机",
+        "score": 4.7,
+        "reference": 5.5
+      },
+      {
+        "label": "竞争性",
+        "score": 5.4,
+        "reference": 5.8
+      },
+      {
+        "label": "说服的",
+        "score": 7.1,
+        "reference": 5.6,
+        "highlight": true
+      },
+      {
+        "label": "决断的",
+        "score": 7.5,
+        "reference": 5.9,
+        "highlight": true
+      }
+    ],
+    "legend": [
+      {
+        "label": "常模参考",
+        "color": "green"
+      },
+      {
+        "label": "个人得分",
+        "color": "green_dark"
+      }
+    ]
+  },
+  "text_blocks": [
+    {
+      "type": "highlight_bullet",
+      "title": "说服与决断 —— 相对突出",
+      "body": "当前结果提示，个体在表达观点、推动决策和快速形成判断方面更容易表现主动。报告文字应强调倾向，而非贴标签。"
+    },
+    {
+      "type": "highlight_bullet",
+      "title": "竞争与权力动机 —— 中等偏稳",
+      "body": "这类维度更适合解释为工作风格差异，而不是能力高低。页面需要保持专业、清爽和企业报告感。"
+    },
+    {
+      "type": "highlight_bullet",
+      "title": "使用建议 —— 结合岗位场景",
+      "body": "输出建议时应说明适用场景，例如协作、沟通和任务推进，而不是直接判断用户适合或不适合某类工作。"
+    }
+  ],
+  "footer": {
+    "band": true
+  }
+}

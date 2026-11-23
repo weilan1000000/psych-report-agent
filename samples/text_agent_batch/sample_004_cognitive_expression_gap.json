@@ -1,0 +1,101 @@
+{
+  "scale_name": "创新潜能与综合素质评估",
+  "report_type": "innovation_potential",
+  "audience": "parents",
+  "profile_label": "认知效率较强但表达和兴趣启动偏谨慎",
+  "respondent_profile": {
+    "child_id": "batch_child_004",
+    "age_group": "小学高年级",
+    "grade": "五年级",
+    "scenario": "家长希望理解孩子做题和规则理解较稳，但表达和主动探索启动较慢的特点",
+    "data_source_note": "基于现有真人测评分布构造的脱敏综合画像，不对应单一真实儿童。"
+  },
+  "scores": {
+    "logical_reasoning": {
+      "dimension_name": "逻辑推理",
+      "domain": "高阶认知维度",
+      "score": 92,
+      "level": "高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子在理解因果关系、比较信息和推导答案时表现较稳。",
+      "writing_hint": "可作为认知优势，避免写成所有学习任务都轻松。"
+    },
+    "learning_speed": {
+      "dimension_name": "学习速度",
+      "domain": "高阶认知维度",
+      "score": 88,
+      "level": "高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子在规则清楚、目标明确的任务中掌握速度较快。",
+      "writing_hint": "强调结构化任务中的效率，不泛化到开放任务。"
+    },
+    "attention_stability": {
+      "dimension_name": "注意稳定性",
+      "domain": "高阶认知维度",
+      "score": 82,
+      "level": "高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子在明确任务中能维持较好专注，适合有步骤、有目标的学习安排。",
+      "writing_hint": "可作为执行资源，但不要写成不会分心。"
+    },
+    "rule_abstraction": {
+      "dimension_name": "规则抽象能力",
+      "domain": "高阶认知维度",
+      "score": 78,
+      "level": "较高",
+      "percentile_band": "top_30",
+      "interpretation": "孩子较能从例子中概括规律，也能在相似任务中迁移规则。",
+      "writing_hint": "可写成理解规则较稳，不写成绝对聪明。"
+    },
+    "design": {
+      "dimension_name": "设计",
+      "domain": "创新行为倾向",
+      "score": 58,
+      "level": "中等",
+      "percentile_band": "middle",
+      "interpretation": "孩子对动手和作品改造有一定兴趣，但需要任务目标更明确时更容易投入。",
+      "writing_hint": "作为中等项，避免夸大。"
+    },
+    "interest_curiosity": {
+      "dimension_name": "兴趣好奇心",
+      "domain": "好奇维度",
+      "score": 42,
+      "level": "发展中",
+      "percentile_band": "bottom_30",
+      "interpretation": "孩子对新领域的主动探索启动较慢，需要熟悉感和明确入口。",
+      "writing_hint": "写成需要入口和陪伴，不写成没有兴趣。"
+    },
+    "public_expression": {
+      "dimension_name": "公开表达",
+      "domain": "创新行为倾向",
+      "score": 35,
+      "level": "发展中",
+      "percentile_band": "bottom_30",
+      "interpretation": "孩子在公开展示和临场表达中较谨慎，需要更多准备和安全感。",
+      "writing_hint": "用发展性表达，建议从小范围结构化表达开始。"
+    },
+    "learning_meaning": {
+      "dimension_name": "学习意义感",
+      "domain": "情绪与学业幸福感",
+      "score": 60,
+      "level": "中等",
+      "percentile_band": "middle",
+      "interpretation": "孩子能理解学习的价值，但对意义的感受会受到任务兴趣和反馈方式影响。",
+      "writing_hint": "写成可继续巩固，不写成强优势或弱项。"
+    }
+  },
+  "constraints": {
+    "not_diagnosis": true,
+    "parent_facing": true,
+    "avoid_claims": [
+      "不要做医学诊断或临床判断",
+      "不要编造孩子没有提供的家庭、学校或创伤经历",
+      "不要使用吓人、绝对化、标签化表达"
+    ],
+    "preferred_style": [
+      "写给家长看",
+      "低分项使用发展性表达",
+      "建议必须包含场景、动作和家长可以说的话"
+    ]
+  }
+}

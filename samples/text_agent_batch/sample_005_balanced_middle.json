@@ -1,0 +1,101 @@
+{
+  "scale_name": "创新潜能与综合素质评估",
+  "report_type": "innovation_potential",
+  "audience": "parents",
+  "profile_label": "整体均衡型：各维度大多处在常态区，重点是找到可持续培养入口",
+  "respondent_profile": {
+    "child_id": "batch_child_005",
+    "age_group": "小学高年级",
+    "grade": "五年级",
+    "scenario": "家长希望了解孩子没有特别突出高低分时，如何找到培养方向",
+    "data_source_note": "基于现有真人测评分布构造的脱敏综合画像，不对应单一真实儿童。"
+  },
+  "scores": {
+    "design": {
+      "dimension_name": "设计",
+      "domain": "创新行为倾向",
+      "score": 62,
+      "level": "中等",
+      "percentile_band": "middle",
+      "interpretation": "孩子对动手和作品改造有一定兴趣，遇到熟悉材料时更愿意尝试。",
+      "writing_hint": "写成可继续巩固的兴趣入口，不写成突出优势。"
+    },
+    "question_curiosity": {
+      "dimension_name": "问题好奇心",
+      "domain": "好奇维度",
+      "score": 58,
+      "level": "中等",
+      "percentile_band": "middle",
+      "interpretation": "孩子会提出问题，但持续追问和主动查证的习惯还可以继续培养。",
+      "writing_hint": "写成有基础、可拓展，不写成缺乏好奇。"
+    },
+    "learning_meaning": {
+      "dimension_name": "学习意义感",
+      "domain": "情绪与学业幸福感",
+      "score": 66,
+      "level": "中等偏上",
+      "percentile_band": "middle",
+      "interpretation": "孩子能在部分任务中感受到学习的价值，但需要更具体的反馈帮助连接意义。",
+      "writing_hint": "作为轻微资源，不写成核心高优势。"
+    },
+    "attention_stability": {
+      "dimension_name": "注意稳定性",
+      "domain": "高阶认知维度",
+      "score": 55,
+      "level": "中等",
+      "percentile_band": "middle",
+      "interpretation": "孩子在短任务或结构清楚的任务中能投入，长任务中会有自然波动。",
+      "writing_hint": "常态区，建议分段任务，不写成注意力问题。"
+    },
+    "thinking_flexibility": {
+      "dimension_name": "思维灵活性",
+      "domain": "思维维度",
+      "score": 53,
+      "level": "中等",
+      "percentile_band": "middle",
+      "interpretation": "孩子能够在提示下尝试换角度，但主动生成多种方案的习惯仍可继续培养。",
+      "writing_hint": "常态区，写成可巩固，不写成短板。"
+    },
+    "performance": {
+      "dimension_name": "表演",
+      "domain": "创新行为倾向",
+      "score": 51,
+      "level": "中等",
+      "percentile_band": "middle",
+      "interpretation": "孩子在表达和展示中表现中等，在熟悉和低压力场景中更愿意参与。",
+      "writing_hint": "写成看场景的表达参与，不写成内向或外向。"
+    },
+    "social": {
+      "dimension_name": "社会",
+      "domain": "创新行为倾向",
+      "score": 57,
+      "level": "中等",
+      "percentile_band": "middle",
+      "interpretation": "孩子对合作和社会情境有一定兴趣，但需要清晰任务和安全氛围。",
+      "writing_hint": "不推断真实社交关系，只写测评提示的倾向。"
+    },
+    "emotional_balance": {
+      "dimension_name": "情感平衡",
+      "domain": "情绪与学业幸福感",
+      "score": 60,
+      "level": "中等",
+      "percentile_band": "middle",
+      "interpretation": "孩子整体情绪状态较平稳，但遇到压力任务时仍需要成人稳定回应。",
+      "writing_hint": "写成支持背景，不夸大为韧性突出。"
+    }
+  },
+  "constraints": {
+    "not_diagnosis": true,
+    "parent_facing": true,
+    "avoid_claims": [
+      "不要做医学诊断或临床判断",
+      "不要编造孩子没有提供的家庭、学校或创伤经历",
+      "不要使用吓人、绝对化、标签化表达"
+    ],
+    "preferred_style": [
+      "写给家长看",
+      "常态区要写得平衡，不夸大也不贬低",
+      "建议必须包含场景、动作和家长可以说的话"
+    ]
+  }
+}

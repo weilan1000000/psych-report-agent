@@ -1,0 +1,79 @@
+{
+  "rule_id": "junior_norm_20_80_raw_score_v1",
+  "source": {
+    "workbook": "初中生_常模分界值_20_80.xlsx",
+    "sheet": "Sheet1",
+    "note": "Use fixed junior-student national norm P20/P80 boundaries. Student scores and norm boundaries are raw scores; do not convert to percentages before drawing charts or assigning bands."
+  },
+  "classification_basis": "fixed_norm_20_80_raw_score",
+  "direction_rule": "For higher_is_better metrics, raw <= P20 is 潜力区 and raw >= P80 is 优势区. For lower_is_better metrics such as 负性情绪, raw <= P20 is 优势区 and raw >= P80 is 潜力区.",
+  "chart_rule": {
+    "score_source": "students_scores first worksheet raw score",
+    "display": "Each detailed metric chart uses one horizontal three-segment band per metric: 潜力区, 常态区, 优势区. Mark the student's raw score with an arrow. Do not print the numeric raw score on the arrow."
+  },
+  "level_rules": [
+    {
+      "level": "潜力区",
+      "condition": "higher_is_better and raw_score <= norm_p20; or lower_is_better and raw_score >= norm_p80"
+    },
+    {
+      "level": "常态区",
+      "condition": "norm_p20 < raw_score < norm_p80"
+    },
+    {
+      "level": "优势区",
+      "condition": "higher_is_better and raw_score >= norm_p80; or lower_is_better and raw_score <= norm_p20"
+    }
+  ],
+  "aliases": {
+    "表演": "表演艺术创造性",
+    "文学": "文学艺术创造性",
+    "设计": "设计艺术创造性",
+    "科学": "科学创造性",
+    "社会": "社会创造性",
+    "规则抽象能力": "规则抽象与概念形成能力",
+    "学习速度": "学习速度与反馈利用能力",
+    "注意稳定性": "规则维持与注意稳定性",
+    "整体执行功能": "整体执行功能效率",
+    "整体执行功能能力": "整体执行功能效率",
+    "抑制控制(Nogo)": "抑制能力NOGO",
+    "抑制控制能力（NogoAccuracy）": "抑制能力NOGO",
+    "抑制控制能力(NogoAccuracy)": "抑制能力NOGO",
+    "抑制控制(go)": "抑制能力GO",
+    "抑制控制能力（goAccuracy）": "抑制能力GO",
+    "抑制控制能力(goAccuracy)": "抑制能力GO",
+    "瑞文推理": "逻辑推理",
+    "逻辑推理能力": "逻辑推理"
+  },
+  "norms": {
+    "认知灵活性": { "sample_size": 158, "p20": 58.3333, "p80": 79.1667, "plot_range": [0, 100] },
+    "规则抽象与概念形成能力": { "sample_size": 158, "p20": 50.0, "p80": 83.3333, "plot_range": [0, 100] },
+    "学习速度与反馈利用能力": { "sample_size": 158, "p20": 88.8889, "p80": 99.2593, "plot_range": [0, 100] },
+    "规则维持与注意稳定性": { "sample_size": 158, "p20": 80.0, "p80": 100.0, "plot_range": [0, 100] },
+    "整体执行功能效率": { "sample_size": 158, "p20": 75.0, "p80": 87.5, "plot_range": [0, 100] },
+    "抑制能力GO": { "sample_size": 155, "p20": 0.8, "p80": 0.98, "plot_range": [0, 1] },
+    "抑制能力NOGO": { "sample_size": 155, "p20": 0.8333, "p80": 0.95, "plot_range": [0, 1] },
+    "逻辑推理": { "sample_size": 159, "p20": 20.0, "p80": 26.0, "plot_range": [0, 30] },
+    "工作记忆": { "sample_size": 159, "p20": 34.0, "p80": 56.4, "plot_range": [0, 100] },
+    "表演艺术创造性": { "sample_size": 159, "p20": 4.0, "p80": 8.4, "plot_range": [0, 12] },
+    "文学艺术创造性": { "sample_size": 159, "p20": 5.0, "p80": 10.0, "plot_range": [0, 12] },
+    "设计艺术创造性": { "sample_size": 159, "p20": 6.0, "p80": 10.0, "plot_range": [0, 12] },
+    "科学创造性": { "sample_size": 159, "p20": 8.6, "p80": 15.0, "plot_range": [0, 18] },
+    "社会创造性": { "sample_size": 159, "p20": 5.6, "p80": 10.0, "plot_range": [0, 12] },
+    "兴趣好奇心": { "sample_size": 163, "p20": 21.0, "p80": 29.0, "plot_range": [0, 30] },
+    "问题好奇心": { "sample_size": 163, "p20": 13.0, "p80": 18.0, "plot_range": [0, 20] },
+    "数学学习兴趣": { "sample_size": 155, "p20": 20.0, "p80": 27.0, "plot_range": [0, 30] },
+    "数学自我效能感": { "sample_size": 155, "p20": 19.0, "p80": 25.0, "plot_range": [0, 30] },
+    "思维流畅性": { "sample_size": 163, "p20": 3.5, "p80": 8.0, "plot_range": [0, 10] },
+    "思维灵活性": { "sample_size": 163, "p20": 3.0, "p80": 6.3, "plot_range": [0, 8] },
+    "思维独创性": { "sample_size": 163, "p20": 3.3934, "p80": 4.3584, "plot_range": [0, 6] },
+    "思维聚合性": { "sample_size": 158, "p20": 9.0, "p80": 11.0, "plot_range": [0, 12] },
+    "学习乐趣": { "p20": 8.0, "p80": 13.0, "raw_range": [4, 16], "plot_range": [4, 16] },
+    "学校归属感": { "p20": 8.0, "p80": 13.0, "raw_range": [4, 16], "plot_range": [4, 16] },
+    "学习意义感": { "p20": 8.0, "p80": 13.0, "raw_range": [4, 16], "plot_range": [4, 16] },
+    "学习自信感": { "p20": 8.0, "p80": 13.0, "raw_range": [4, 16], "plot_range": [4, 16] },
+    "积极情绪": { "p20": 15.0, "p80": 40.0, "raw_range": [10, 50], "plot_range": [10, 50] },
+    "负性情绪": { "p20": 15.0, "p80": 40.0, "raw_range": [10, 50], "plot_range": [10, 50], "direction": "lower_is_better" },
+    "情感平衡": { "p20": 73.0, "p80": 90.0, "raw_range": [10, 50], "plot_range": [0, 100] }
+  }
+}

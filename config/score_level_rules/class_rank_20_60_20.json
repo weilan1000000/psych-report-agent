@@ -1,0 +1,70 @@
+{
+  "rule_id": "class_rank_20_60_20_v1",
+  "reference_group": "同班已完成本次量表的学生",
+  "rank_algorithm": {
+    "tie_method": "average_rank",
+    "percentile_formula": "(cohort_size - average_rank) / (cohort_size - 1) * 100",
+    "note": "rank_percentile 越高，表示该指标按其预设方向优于更多同班同学。"
+  },
+  "level_rules": [
+    {
+      "level": "潜力区",
+      "percentile_condition": "rank_percentile <= 20",
+      "parent_label": "位于班级后20%，有较大提升空间"
+    },
+    {
+      "level": "常态区",
+      "percentile_condition": "20 < rank_percentile <= 80",
+      "parent_label": "处于班级中间60%的稳定阶段"
+    },
+    {
+      "level": "优势区",
+      "percentile_condition": "rank_percentile > 80",
+      "parent_label": "优于班级约80%的同学"
+    }
+  ],
+  "extreme_score_overrides": [
+    {
+      "direction": "higher_is_better",
+      "score_equals": 100,
+      "level": "优势区",
+      "percentile_band": "score_ceiling",
+      "reason": "该指标达到量表满分，作为优势区处理。"
+    },
+    {
+      "direction": "lower_is_better",
+      "score_equals": 0,
+      "level": "优势区",
+      "percentile_band": "score_floor_favorable",
+      "reason": "该指标在有利方向达到量表最低分，作为优势区处理。"
+    }
+  ],
+  "metric_directions": {
+    "表演": "higher_is_better",
+    "文学": "higher_is_better",
+    "设计": "higher_is_better",
+    "科学": "higher_is_better",
+    "社会": "higher_is_better",
+    "兴趣好奇心": "higher_is_better",
+    "问题好奇心": "higher_is_better",
+    "思维流畅性": "higher_is_better",
+    "思维灵活性": "higher_is_better",
+    "思维独创性": "higher_is_better",
+    "思维聚合性": "higher_is_better",
+    "认知灵活性": "higher_is_better",
+    "规则抽象能力": "higher_is_better",
+    "学习速度": "higher_is_better",
+    "注意稳定性": "higher_is_better",
+    "整体执行功能": "higher_is_better",
+    "抑制控制(Nogo)": "higher_is_better",
+    "抑制控制(go)": "higher_is_better",
+    "逻辑推理": "higher_is_better",
+    "学习乐趣": "higher_is_better",
+    "学校归属感": "higher_is_better",
+    "学习意义感": "higher_is_better",
+    "学习自信感": "higher_is_better",
+    "积极情绪": "higher_is_better",
+    "负性情绪": "lower_is_better",
+    "情感平衡": "higher_is_better"
+  }
+}

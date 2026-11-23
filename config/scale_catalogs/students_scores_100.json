@@ -1,0 +1,50 @@
+{
+  "catalog_id": "students_scores_100_v1",
+  "source": {
+    "workbook": "students_scores_original.xlsx",
+    "sheet": "分数明细表",
+    "header_row": 3,
+    "score_range": "raw_metric_score",
+    "note": "This catalog records metric names and hierarchy only. Student scores for charts must come from the first worksheet raw score table; do not convert these scores to a 0-100 percentage scale."
+  },
+  "input_contract": {
+    "provided_metrics": "Each assessment may contain only a subset of these metrics. Missing metrics mean not assessed or not supplied; they must not be treated as low, normal, or absent abilities.",
+    "required_per_metric": ["dimension_name", "score"],
+    "recommended_per_metric": ["domain", "submodule", "level", "percentile_band", "interpretation", "direction"],
+    "chart_score_rule": "Charts use raw scores from the first students_scores worksheet. If fixed P20/P80 norm boundaries are supplied, detailed indicator charts must render three color bands and an arrow for the raw score; do not print the numeric score in the chart.",
+    "level_rule": "Use level, percentile_band, and interpretation supplied by the scoring service as the source of truth. Do not turn a raw score into 优势区、常态区、潜力区 with a global threshold unless this scale version supplies an explicit threshold configuration.",
+    "direction_rule": "Do not infer whether a high score is positive or negative from a metric name. In particular, 负性情绪 and task-based indicators require an explicit direction or interpretation from the scoring service."
+  },
+  "domains": [
+    {
+      "name": "创新",
+      "submodule": "创新行为（问卷）",
+      "metrics": ["表演", "文学", "设计", "科学", "社会"]
+    },
+    {
+      "name": "好奇",
+      "submodule": "好奇心（问卷）",
+      "metrics": ["兴趣好奇心", "问题好奇心"]
+    },
+    {
+      "name": "思维",
+      "submodule": "创新潜能（3AUT+1VRAT）",
+      "metrics": ["思维流畅性", "思维灵活性", "思维独创性", "思维聚合性"]
+    },
+    {
+      "name": "认知",
+      "submodule": "高阶认知能力（5威斯康星卡片+2GONOGO+1瑞文）",
+      "metrics": ["认知灵活性", "规则抽象能力", "学习速度", "注意稳定性", "整体执行功能", "抑制控制(Nogo)", "抑制控制(go)", "逻辑推理"]
+    },
+    {
+      "name": "情绪",
+      "submodule": "学业幸福感（问卷）",
+      "metrics": ["学习乐趣", "学校归属感", "学习意义感", "学习自信感"]
+    },
+    {
+      "name": "情绪",
+      "submodule": "情绪状态（问卷）",
+      "metrics": ["积极情绪", "负性情绪", "情感平衡"]
+    }
+  ]
+}
